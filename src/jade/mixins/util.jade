@@ -93,7 +93,7 @@ mixin experience_content_internship(item)
   +experience_content_job(item)
 
 mixin experience_title_project(item)
-  span.experience-project-type= project_type[item.project_type]
+  span.experience-project-name= [item.name]
   span.experience-title-aside
     if item.source
       a.experience-project-link(href=item.source)= dict.source_code
@@ -101,7 +101,6 @@ mixin experience_title_project(item)
         a.experience-project-link(href=item.demo)= dict.demo
 
 mixin experience_content_project(item)
-
-  dt.experience-project-name= item.name
+  //dt.experience-project-name= item.name
   each desc in item.description
     dd.experience-task!= highlight(desc)

@@ -10,7 +10,7 @@ block style
 block header
   header.row
     figure.header-qrcode
-      +responsive("qrcode", contact.wechat, "invisible-lt-sm visible-print")
+      //+responsive("qrcode", contact.wechat, "invisible-lt-sm visible-print")
     section.title
       h1= name
       h2= job_description.join("/")
@@ -18,15 +18,17 @@ block header
       ul.contact
         each item, key in contact
           +#{key}(item)
-        +responsive("wechat", contact.wechat, "visible-lt-sm invisible-print")
+        //+responsive("wechat", contact.wechat, "visible-lt-sm invisible-print")
 
 block content
   article.content.row
     article.column-6.first.column
+      block blogs
       block education
       block language
-      block experience
+      block projects
     article.column-6.last.column
+      block experience
       block skills
 
 
@@ -37,7 +39,7 @@ block footer
 
 block sidebar
   aside
-    block links
+    //block links
 
 block IEcondition
     <!--[if lte IE 8]>

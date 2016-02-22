@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
 
 var path = require('path');
+
+//一个可以作为服务器的东东  可以配合live-reload一起用
 var gls = require('gulp-live-server');
 
 var server = gls.static('dist', 8000);

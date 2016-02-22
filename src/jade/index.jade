@@ -32,6 +32,16 @@ block experience
         dl.experience-description.timeline-content
           +#{"experience_content_" + item.type}(item)
 
+block projects
+  +section("projects", true)
+    each item in projects
+      li.timeline-item(class="experience-" + item.type)
+        h3.timeline-title
+          //+#{"experience_title_" + item.type}  是一个函数名
+          +#{"experience_title_" + item.type}(item)
+        dl.experience-description.timeline-content
+          +#{"experience_content_" + item.type}(item)
+
 block skills
   +section("skills", true)
     each item in skills
@@ -41,13 +51,20 @@ block skills
         +#{"skills_" + item.type}(item)
 
 
-block links
-    ul.links
-      each link in links
-        li.link
-          a(href=link.url)= link_type[link.type]
+block blogs
+  //ul.links
+    //each link in links
+      //li.link
+        //// a(xxx)= linktext  动态的a标签的text
+        //a(href=link.url)= link.type
+  +section("blogs", true)
+    ul.contact
+      each item, key in blogs
+        +#{key}(item)
+
+
 
 block repo
   p
-    | This resume is generated with Gulp, Less and Jade by 
+    | This resume is generated with Gulp, Less and Jade by
     | #[a(href="https://github.com/joyeecheung/resume") Joyee Cheung&#39;s resume generator].
