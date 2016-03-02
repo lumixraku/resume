@@ -21,10 +21,11 @@ function getLocals() {
   var locals = require(localePath);
 
   // remove cache
+  // require 文件的时候实惠产生cache的 尤其是配置文件
   delete require.cache[require.resolve('./resume.json')];
   delete require.cache[require.resolve(localePath)];
 
-  // integrate the context
+  // integrate the context //dict 和 resume 两个配置融合
   for (var item in resumeData) {
     locals[item] = resumeData[item];
   }

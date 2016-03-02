@@ -1,6 +1,17 @@
 extends ./layout.jade
 include ../mixins/util.jade
 
+
+//官方翻译为继承 很难理解 HTML咋继承呢?
+//实际上就是有一个最基本的布局 只包含了header  body  footer
+//
+
+//jade的各种用法实际上是将各种文件拼接在一起
+//本文件第一句就是 extends ./layout.jade  在这个文件中定义了一些锚点
+//也就是block tilte    block style 这样的东西
+//而这里也有 block title  block style  实际上就是把属于block title的东西都插入到 layout.jade的对应位置中
+
+
 block title
   title= resume_title
 
@@ -17,8 +28,9 @@ block header
     address
       ul.contact
         each item, key in contact
+          //这里调用了 phone  email函数
           +#{key}(item)
-        //+responsive("wechat", contact.wechat, "visible-lt-sm invisible-print")
+          //+responsive("wechat", contact.wechat, "visible-lt-sm invisible-print")
 
 block content
   article.content.row

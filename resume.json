@@ -16,6 +16,10 @@
     },
     "blog": {
       "url": "http://www.cnblogs.com/cart55free99"
+    },
+    "sinaweibo":{
+      "id":"bubuBear爱数码",
+      "url": "http://weibo.com/u/2371564754"
     }
   },
   "education": [{
@@ -24,7 +28,9 @@
     "major": "软件工程",
     "start": "2013",
     "end": "2016",
-    "honor": []
+    "honor": [
+      "2013 - 2014 学年度院**三等奖学金**"
+    ]
   }],
   "language": [{
     "type": "english",
@@ -37,7 +43,9 @@
       "full": "710",
       "score": "542"
     }],
-    "description": []
+    "description": [
+      "能够较流程的阅读英文文档, 日常查看API也优先考虑官方文档"
+    ]
   }],
   "experience": [{
     "type": "internship",
@@ -47,7 +55,7 @@
     "end": "2015.09",
     "name": "前端开发",
     "description": [
-      "腾讯课堂后台管理系统</br>负责腾讯课堂管理系统的前端开发  完成业务需求并改进框架"
+      "腾讯课堂后台管理系统</br>负责腾讯课堂管理系统的前端开发  完成业务需求,增加并完善框架功能"
     ],
     "stack": [
       "extjs"
@@ -60,7 +68,7 @@
     "end": "2015.04",
     "name": "前端开发",
     "description": [
-      "HQC质量管理</br>一个AngularJS + PHP 的质量报告系统 用于服务器运行监测和问题上报, 负责图表展示和新需求的开发"
+      "HQC质量管理</br>一个AngularJS + PHP 的质量报告系统  该系统用于服务器运行监测和收集问题报告 负责开发图表展示功能和一些其他新需求"
     ],
     "stack": [
       "jqueryui",
@@ -74,10 +82,10 @@
     "end": "2015.01",
     "name": "前端开发",
     "description": [
-      "移动端多语言网址导航",
-      "主题商城,视频中心,音乐中心(手机版) </br>使用`Grunt` + `RequireJS` + `Sass`",
-      "浏览器性能测试报告</br>使用`Node.js` + `mongo` 手机浏览器自动化性能测试系统",
-      "Chrome 书签同步扩展开发与维护"
+      "移动端多语言网址导航 </br>通过配置文件生成的网址导航页  大大简化了开发流程",
+      "主题商城,视频中心,音乐中心(手机版) </br>单页面应用 使用`Grunt` + `RequireJS` + `Sass`开发",
+      "浏览器性能测试报告</br>使用`Node.js` + `mongo` 手机浏览器自动化性能测试系统</br> 能够定时执行测试, 自动卸载安装应用,从浏览器执行JavaScript速度,DOM操作,Cache性能,加载资源,渲染多个角度测试浏览器性能",
+      "Chrome书签同步扩展的开发与维护"
     ],
     "stack": [
       "zepto",
@@ -110,7 +118,7 @@
     "source": "https://github.com/lumixraku/gulp_demo/tree/master/GulpWeather",
     "demo": "http://lumixraku.github.io/demos/weather/",
     "description": [
-      "仿我的天气应用, 使用 `Gulp` + `Browserify` + `Sass`的天气页"
+      "仿我的天气应用, 使用 `Gulp` + `Browserify` + `Sass`开发  数据来自于OpenWeather 根据经纬度获取所在地的天气 使用Canvas绘制了一周气温走势"
     ],
     "stack": [
       "Sass",
